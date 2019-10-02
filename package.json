@@ -1,0 +1,18 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "d32c1cef-19e7-46c4-b40e-36f0e7f75e9d"
+	},
+	"author": "Lincoln Mitchell",
+	"dependencies": {
+		"@material-ui/core": "^4.4.3"
+	}
+}

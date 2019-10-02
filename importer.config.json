@@ -1,0 +1,340 @@
+{
+    "packageName": "@material-ui/core",
+    "rootFiles": [
+        "node_modules/@material-ui/core/index.d.ts"
+    ],
+    "additionalImports": [],
+    "out": "code/",
+    "components": {
+        "AppBar": {
+            "ignore": false
+        },
+        "Avatar": {
+            "ignore": false
+        },
+        "Backdrop": {
+            "ignore": false
+        },
+        "Badge": {
+            "ignore": false
+        },
+        "BottomNavigation": {
+            "ignore": false
+        },
+        "BottomNavigationAction": {
+            "ignore": false
+        },
+        "Box": {
+            "ignore": false
+        },
+        "Breadcrumbs": {
+            "ignore": false
+        },
+        "Button": {
+            "ignore": false
+        },
+        "ButtonBase": {
+            "ignore": false
+        },
+        "ButtonGroup": {
+            "ignore": false
+        },
+        "Card": {
+            "ignore": false
+        },
+        "CardActionArea": {
+            "ignore": false
+        },
+        "CardActions": {
+            "ignore": false
+        },
+        "CardContent": {
+            "ignore": false
+        },
+        "CardHeader": {
+            "ignore": false
+        },
+        "CardMedia": {
+            "ignore": false
+        },
+        "Checkbox": {
+            "ignore": false
+        },
+        "Chip": {
+            "ignore": false
+        },
+        "CircularProgress": {
+            "ignore": false
+        },
+        "ClickAwayListener": {
+            "ignore": false
+        },
+        "Collapse": {
+            "ignore": false
+        },
+        "Container": {
+            "ignore": false
+        },
+        "CssBaseline": {
+            "ignore": false
+        },
+        "Dialog": {
+            "ignore": false
+        },
+        "DialogActions": {
+            "ignore": false
+        },
+        "DialogContent": {
+            "ignore": false
+        },
+        "DialogContentText": {
+            "ignore": false
+        },
+        "DialogTitle": {
+            "ignore": false
+        },
+        "Divider": {
+            "ignore": false
+        },
+        "Drawer": {
+            "ignore": false
+        },
+        "ExpansionPanel": {
+            "ignore": false
+        },
+        "ExpansionPanelActions": {
+            "ignore": false
+        },
+        "ExpansionPanelDetails": {
+            "ignore": false
+        },
+        "ExpansionPanelSummary": {
+            "ignore": false
+        },
+        "Fab": {
+            "ignore": false
+        },
+        "Fade": {
+            "ignore": false
+        },
+        "FilledInput": {
+            "ignore": false
+        },
+        "FormControl": {
+            "ignore": false
+        },
+        "FormControlLabel": {
+            "ignore": false
+        },
+        "FormGroup": {
+            "ignore": false
+        },
+        "FormHelperText": {
+            "ignore": false
+        },
+        "FormLabel": {
+            "ignore": false
+        },
+        "Grid": {
+            "ignore": false
+        },
+        "GridList": {
+            "ignore": false
+        },
+        "GridListTile": {
+            "ignore": false
+        },
+        "GridListTileBar": {
+            "ignore": false
+        },
+        "Grow": {
+            "ignore": false
+        },
+        "Hidden": {
+            "ignore": false
+        },
+        "Icon": {
+            "ignore": false
+        },
+        "IconButton": {
+            "ignore": false
+        },
+        "Input": {
+            "ignore": false
+        },
+        "InputAdornment": {
+            "ignore": false
+        },
+        "InputBase": {
+            "ignore": false
+        },
+        "InputLabel": {
+            "ignore": false
+        },
+        "LinearProgress": {
+            "ignore": false
+        },
+        "Link": {
+            "ignore": false
+        },
+        "List": {
+            "ignore": false
+        },
+        "ListItem": {
+            "ignore": false
+        },
+        "ListItemAvatar": {
+            "ignore": false
+        },
+        "ListItemIcon": {
+            "ignore": false
+        },
+        "ListItemSecondaryAction": {
+            "ignore": false
+        },
+        "ListItemText": {
+            "ignore": false
+        },
+        "ListSubheader": {
+            "ignore": false
+        },
+        "Menu": {
+            "ignore": false
+        },
+        "MenuItem": {
+            "ignore": false
+        },
+        "MenuList": {
+            "ignore": false
+        },
+        "MobileStepper": {
+            "ignore": false
+        },
+        "Modal": {
+            "ignore": false
+        },
+        "NativeSelect": {
+            "ignore": false
+        },
+        "NoSsr": {
+            "ignore": false
+        },
+        "OutlinedInput": {
+            "ignore": false
+        },
+        "Paper": {
+            "ignore": false
+        },
+        "Popover": {
+            "ignore": false
+        },
+        "Popper": {
+            "ignore": false
+        },
+        "Portal": {
+            "ignore": false
+        },
+        "Radio": {
+            "ignore": false
+        },
+        "RadioGroup": {
+            "ignore": false
+        },
+        "RootRef": {
+            "ignore": false
+        },
+        "Select": {
+            "ignore": false
+        },
+        "Slide": {
+            "ignore": false
+        },
+        "Slider": {
+            "ignore": false
+        },
+        "Snackbar": {
+            "ignore": false
+        },
+        "SnackbarContent": {
+            "ignore": false
+        },
+        "Step": {
+            "ignore": false
+        },
+        "StepButton": {
+            "ignore": false
+        },
+        "StepConnector": {
+            "ignore": false
+        },
+        "StepContent": {
+            "ignore": false
+        },
+        "StepIcon": {
+            "ignore": false
+        },
+        "StepLabel": {
+            "ignore": false
+        },
+        "Stepper": {
+            "ignore": false
+        },
+        "SvgIcon": {
+            "ignore": false
+        },
+        "SwipeableDrawer": {
+            "ignore": false
+        },
+        "Switch": {
+            "ignore": false
+        },
+        "Tab": {
+            "ignore": false
+        },
+        "Table": {
+            "ignore": false
+        },
+        "TableBody": {
+            "ignore": false
+        },
+        "TableCell": {
+            "ignore": false
+        },
+        "TableFooter": {
+            "ignore": false
+        },
+        "TableHead": {
+            "ignore": false
+        },
+        "TablePagination": {
+            "ignore": false
+        },
+        "TableRow": {
+            "ignore": false
+        },
+        "TableSortLabel": {
+            "ignore": false
+        },
+        "TextareaAutosize": {
+            "ignore": false
+        },
+        "Tabs": {
+            "ignore": false
+        },
+        "TextField": {
+            "ignore": false
+        },
+        "Toolbar": {
+            "ignore": false
+        },
+        "Tooltip": {
+            "ignore": false
+        },
+        "Typography": {
+            "ignore": false
+        },
+        "Zoom": {
+            "ignore": false
+        }
+    }
+}
