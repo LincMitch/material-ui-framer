@@ -20,6 +20,8 @@ export function Icon({iconName, ...props}) {
 Icon.defaultProps = {
     iconName: "DeleteTwoTone",
     color: "primary",
+    width: 24,
+    height: 24
 }
 
 addPropertyControls(Icon, {
