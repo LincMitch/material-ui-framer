@@ -13,6 +13,8 @@
 	},
 	"author": "Lincoln Mitchell",
 	"dependencies": {
-		"@material-ui/core": "^4.4.3"
+		"@framer/jim-parrillo.editable-material-icons-svg": "^1.6.0",
+		"@material-ui/core": "^4.5.0",
+		"@material-ui/icons": "^4.4.3"
 	}
 }

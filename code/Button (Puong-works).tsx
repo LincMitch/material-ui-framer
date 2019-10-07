@@ -2,27 +2,22 @@ import * as React from "react";
 import * as System from "@material-ui/core";
 import {Frame, ControlType, PropertyControls, addPropertyControls } from "framer";
 import { withHOC } from "./withHOC";
-import { cloneFrameless } from "./tools/framerx-utils";
+import Icon from '@material-ui/core/Icon';
+import DeleteIcon from '@material-ui/icons/DeleteTwoTone';
+import CloudUploadIcon from '@material-ui/icons/CloudUploadTwoTone';
+import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoiceTwoTone';
+import SaveIcon from '@material-ui/icons/SaveTwoTone';
 
-type Props = {
-  externalStartIcon: React.ReactNode;
-  externalEndIcon: React.ReactNode;
-};
+const iconMap = {
+    // Use SVG spites instead.
+    // Because can't convert String to component
+    "delete": <DeleteIcon  />,
+    "cloud-upload": <CloudUploadIcon  />,
+    "save": <SaveIcon  />,
+}
 
 const InnerButton = props => {
-  const { externalStartIcon, externalEndIcon, ...rest } = props;
-  let startIconElement;
-  let endIconElement;
-  startIconElement = cloneFrameless(externalStartIcon);
-  endIconElement = cloneFrameless(externalEndIcon);
-  return (
-    <System.Button {...props}
-    startIcon={startIconElement}
-    endIcon={endIconElement}
-    >
-      {props.text}
-    </System.Button>
-  );
+  return <System.Button {...props} startIcon={iconMap[props.icon]}>{props.text}{props.children}</System.Button>;
 };
 
 export const Button = withHOC(InnerButton);
@@ -34,14 +29,6 @@ Button.defaultProps = {
 };
 
 addPropertyControls(Button, {
-  externalStartIcon: {
-    type: ControlType.ComponentInstance,
-    title: "Start Icon"
-  },
-  externalEndIcon: {
-    type: ControlType.ComponentInstance,
-    title: "End Icon"
-  },
   text: {
     title: "Text",
     type: ControlType.String
@@ -166,5 +153,10 @@ addPropertyControls(Button, {
       "Outlined",
       "Contained",
     ]
-  }, 
+  },
+  icon: {
+    title: "Icon",
+    type: ControlType.Enum,
+    options: Object.keys(iconMap),
+  },  
 });

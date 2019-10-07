@@ -1,51 +1,68 @@
-import * as React from "react";
-import * as System from "@material-ui/core";
-import { ControlType, PropertyControls, addPropertyControls } from "framer";
-import { withHOC } from "./withHOC";
+import * as React from "react"
+import { Frame, addPropertyControls, ControlType } from "framer"
+import * as allIcons from "@material-ui/icons"
 
-const InnerIcon = props => {
-  return <System.Icon {...props}></System.Icon>;
-};
-
-export const Icon = withHOC(InnerIcon);
+export function Icon({iconName, ...props}) {
+    const MaterialIcon = allIcons[iconName];
+    return (
+        <MaterialIcon 
+            color={props.color} 
+            fontSize={props.fontSize}
+        />
+    )
+}
 
 Icon.defaultProps = {
-  width: 150,
-  height: 50
-};
+    iconName: "DeleteTwoTone",
+    color: "primary",
+}
 
 addPropertyControls(Icon, {
-  color: {
-    title: "Color",
-    type: ControlType.Enum,
-    options: [
-      "inherit",
-      "primary",
-      "secondary",
-      "default",
-      "error",
-      "disabled",
-      "action"
-    ],
-    optionTitles: [
-      "inherit",
-      "primary",
-      "secondary",
-      "default",
-      "error",
-      "disabled",
-      "action"
-    ]
-  },
-  fontSize: {
-    title: "Font size",
-    type: ControlType.Enum,
-    options: ["inherit", "default", "small", "large"],
-    optionTitles: ["inherit", "default", "small", "large"]
-  },
-  placeholder: {
-    title: "Placeholder",
-    type: ControlType.String,
-    defaultValue: "placeholder"
-  }
-});
+    iconName: {
+        type: ControlType.String,
+        defaultValue: "DeleteTwoTone",
+        title: "Icon Name",
+    },
+    // children: {
+    //   title: "Children",
+    //   type: ControlType.ComponentInstance,
+    // },
+    // classes ?
+    color: {
+        title: "Color",
+        type: ControlType.Enum,
+        options: [
+            "inherit",
+            "primary",
+            "secondary",
+            "action",
+            "error",
+            "disabled",
+        ],
+        optionTitles: [
+            "Inherit",
+            "Primary",
+            "Secondary",
+            "Action",
+            "Error",
+            "Disabled",
+        ]
+    },
+    //component?
+    fontSize: {
+        title: "Font Size",
+        type: ControlType.Enum,
+        options: [
+            "inherit",
+            "default",
+            "small",
+            "large",
+        ],
+        optionTitles: [
+            "Inherit",
+            "Default",
+            "Small",
+            "Large",
+        ]
+    },
+})
