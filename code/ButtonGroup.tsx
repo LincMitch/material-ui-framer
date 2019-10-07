@@ -109,6 +109,7 @@ fullWidth: {
   title: "Full width",
   type: ControlType.Boolean
 },
+// Size doesn't seem to work
 size: {
   title: "Size",
   type: ControlType.Enum,
