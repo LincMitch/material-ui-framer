@@ -5,7 +5,7 @@ import { withHOC } from "./withHOC";
 import { cloneFrameless } from "./tools/framerx-utils";
 
 type Props = {
-  externalIcon: React.ReactNode;
+  externalIcon: React.ReactElement;
 };
 
 
@@ -15,8 +15,10 @@ const InnerChip = props => {
   iconElement = cloneFrameless(externalIcon);
 
   return <System.Chip {...props}
-  icon={iconElement}
-  ></System.Chip>;
+    icon={iconElement}
+    >
+
+  </System.Chip>;
 };
 
 export const Chip = withHOC(InnerChip);
@@ -28,6 +30,10 @@ Chip.defaultProps = {
 };
 
 addPropertyControls(Chip, {
+  externalIcon: {
+    title: "Icon",
+    type: ControlType.ComponentInstance,
+  },
   avatar: {
     title: "Avatar",
     type: ControlType.ComponentInstance
@@ -135,10 +141,6 @@ addPropertyControls(Chip, {
   disabled: {
     title: "Disabled",
     type: ControlType.Boolean
-  },
-  externalIcon: {
-    title: "Icon",
-    type: ControlType.ComponentInstance,
   },
   // Type node?
   label: {
