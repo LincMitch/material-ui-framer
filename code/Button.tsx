@@ -16,7 +16,7 @@ const InnerButton = props => {
   startIconElement = cloneFrameless(externalStartIcon);
   endIconElement = cloneFrameless(externalEndIcon);
   return (
-    <System.Button {...props}
+    <System.Button {...rest}
     startIcon={startIconElement}
     endIcon={endIconElement}
     >
